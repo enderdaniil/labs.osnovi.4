@@ -24,7 +24,7 @@ int main()
     }
     for (int i=0; i<k; i++)
     {
-        printf("%fl ",a[i]);
+        printf("%f ",a[i]);
     }
-    return o;
+    return 0;
 }
