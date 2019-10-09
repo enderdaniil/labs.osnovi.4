@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    printf("Vvedite kolvo elementov");
+    printf("Vvedite kolvo elementov\n");
     int k;
-    scanf("%n",k);
-    printf("Vvedite massiv");
-    double a[k];
+    scanf("%d",&k);
+    printf("Vvedite massiv\n");
+    float a[k];
     for (int i=0; i<k; i++)
     {
-        scanf("%fl",a[i]);
+        scanf("%fl",&a[i]);
     }
     for (int i=0; i<k-1; i++)
     {
