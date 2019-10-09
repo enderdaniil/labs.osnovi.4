@@ -16,7 +16,7 @@ int main()
         {
             if (a[j+1]<a[j])
             {
-                int b=a[j+1];
+                float b=a[j+1];
                 a[j+1]=a[j];
                 a[j]=b;
             }
