@@ -5,26 +5,29 @@ int main()
     int k;
     scanf("%d",&k);
     printf("Vvedite massiv\n");
-    float a[k];
+    int a[k];
+    int flag = 1;
     for (int i=0; i<k; i++)
     {
-        scanf("%fl",&a[i]);
+        scanf("%d",&a[i]);
     }
     for (int i=0; i<k-1; i++)
     {
-        for (int j=0; j<k-i-1; j++)
+        flag = 0;
+        for (int j=0; (j<k-i-1) && (flag == 1); j++)
         {
             if (a[j+1]<a[j])
             {
-                float b=a[j+1];
+                int b=a[j+1];
                 a[j+1]=a[j];
                 a[j]=b;
+                flag = 1;
             }
         }
     }
     for (int i=0; i<k; i++)
     {
-        printf("%f ",a[i]);
+        printf("%d ",a[i]);
     }
     return 0;
 }
