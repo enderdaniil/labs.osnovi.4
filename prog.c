@@ -4,7 +4,7 @@ int main()
 {
 	printf("Vvedite massiv\n");
 	int k = 10;
-	int a[10] = {0};
+	int a[10];
 	int flag = 1;
 	for (int i = 0; i < k; i++)
 	{
@@ -24,6 +24,7 @@ int main()
 			}
 		}
 	}
+
 	for (int i = 0; i < k; i++)
 	{
 		printf("%d ", a[i]);
